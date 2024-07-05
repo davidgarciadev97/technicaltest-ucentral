@@ -64,7 +64,7 @@ class ReservaController extends Controller
     }
 
     /**
-     * Actualiza el recurso especificado en el almacenamiento.
+     * Actualice el recurso especificado en el almacenamiento.
      */
     public function update(ReservaRequest $request, Reserva $reserva): RedirectResponse
     {
@@ -84,4 +84,4 @@ class ReservaController extends Controller
 }
 
 
-// Este controller involucra todo el crud para el manejo de la infomacion en la funcionalidad del sistema de reservas
+// Este controller gestiona la informacion de todo el crud dentro de la funcionalidad del sistema de reservas

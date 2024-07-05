@@ -25,6 +25,7 @@ class ReservaRequest extends FormRequest
 			'name' => 'required|string',
 			'numIdenti' => 'required',
 			'userType' => 'required|string',
+			'typeLab' => 'required|string',
 			'area' => 'required|string',
 			'dateSolicitud' => 'required',
 			'dateInicio' => 'required',

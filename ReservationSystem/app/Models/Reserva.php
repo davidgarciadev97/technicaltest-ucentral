@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $name
  * @property $numIdenti
  * @property $userType
+ * @property $typeLab
  * @property $area
  * @property $dateSolicitud
  * @property $dateInicio
@@ -32,10 +33,9 @@ class Reserva extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['name', 'numIdenti', 'userType', 'area', 'dateSolicitud', 'dateInicio', 'dateFin', 'observacion'];
-
+    protected $fillable = ['name', 'numIdenti', 'userType', 'typeLab', 'area', 'dateSolicitud', 'dateInicio', 'dateFin', 'observacion'];
 
 }
 
 
-// Este es el modelo para la gestion de reservas el cual brinda al controller la informacion a manejar
+// Este es el modelo que utiliza el controller para indicar que campos son de ingreso.

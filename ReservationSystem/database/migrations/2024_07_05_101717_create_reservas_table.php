@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('numIdenti');
             $table->string('userType');
+            $table->string('typeLab');
             $table->string('area');
             $table->date('dateSolicitud');
             $table->datetime('dateInicio');
@@ -33,3 +34,5 @@ return new class extends Migration
         Schema::dropIfExists('reservas');
     }
 };
+
+// Esta es la migracion para la tabla de reservas

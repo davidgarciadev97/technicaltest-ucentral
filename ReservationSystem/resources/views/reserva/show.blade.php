@@ -14,7 +14,7 @@
                             <span class="card-title">{{ __('Ver') }} Reserva</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary btn-sm" href="{{ route('reservas.index') }}"> {{ __('Regresar') }}</a>
+                            <a class="btn btn-primary btn-sm" href="{{ route('reservas.index') }}"> {{ __('Atras') }}</a>
                         </div>
                     </div>
 
@@ -25,7 +25,7 @@
                                     {{ $reserva->name }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
-                                    <strong>Num. Identificacion:</strong>
+                                    <strong>Num. Identidad:</strong>
                                     {{ $reserva->numIdenti }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
@@ -33,7 +33,11 @@
                                     {{ $reserva->userType }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
-                                    <strong>Area:</strong>
+                                    <strong>Tipo de Laboratori:</strong>
+                                    {{ $reserva->typeLab }}
+                                </div>
+                                <div class="form-group mb-2 mb20">
+                                    <strong>Dependencia o Programa:</strong>
                                     {{ $reserva->area }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
@@ -41,15 +45,15 @@
                                     {{ $reserva->dateSolicitud }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
-                                    <strong>Fecha Inicio Reserva:</strong>
+                                    <strong>Fecha Inicio:</strong>
                                     {{ $reserva->dateInicio }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
-                                    <strong>Fecha Fin Reserva:</strong>
+                                    <strong>Fecha Fin:</strong>
                                     {{ $reserva->dateFin }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
-                                    <strong>Observaciones:</strong>
+                                    <strong>Observación:</strong>
                                     {{ $reserva->observacion }}
                                 </div>
 
