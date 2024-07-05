@@ -21,14 +21,14 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
+     * Donde redirigir al usuario después de iniciar sesión.
      *
      * @var string
      */
     protected $redirectTo = '/reservas';
 
     /**
-     * Create a new controller instance.
+     * Cree una nueva instancia de controlador.
      *
      * @return void
      */
@@ -38,3 +38,6 @@ class LoginController extends Controller
         $this->middleware('auth')->only('logout');
     }
 }
+
+
+// Este controlador permite la validacion para el login

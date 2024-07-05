@@ -24,14 +24,14 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
+     * Redirige a la tabla especificada
      *
      * @var string
      */
     protected $redirectTo = '/reservas';
 
     /**
-     * Create a new controller instance.
+     * Cree una nueva instancia de controlador.
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
+     * Validador para una solicitud de registro entrante.
      *
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
@@ -57,7 +57,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * Cree una nueva instancia de usuario después de un registro válido.
      *
      * @param  array  $data
      * @return \App\Models\User
@@ -74,3 +74,6 @@ class RegisterController extends Controller
         ]);
     }
 }
+
+
+// Este controller gestiona el registro de un nuevo usuario

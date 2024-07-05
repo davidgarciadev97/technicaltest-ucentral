@@ -31,3 +31,5 @@ return new class extends Migration
         Schema::dropIfExists('usuario');
     }
 };
+
+// Esta es la migracion para la tabla de usuarios

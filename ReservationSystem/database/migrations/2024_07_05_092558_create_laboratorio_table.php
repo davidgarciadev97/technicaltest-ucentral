@@ -27,3 +27,6 @@ return new class extends Migration
         Schema::dropIfExists('laboratorio');
     }
 };
+
+
+// Esta es la migracion para la tabla de laboratorios

@@ -28,7 +28,7 @@ class Reserva extends Model
     protected $perPage = 20;
 
     /**
-     * The attributes that are mass assignable.
+     * Los atributos que se pueden asignar.
      *
      * @var array<int, string>
      */
@@ -36,3 +36,6 @@ class Reserva extends Model
 
 
 }
+
+
+// Este es el modelo para la gestion de reservas el cual brinda al controller la informacion a manejar

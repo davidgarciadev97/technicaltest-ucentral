@@ -56,3 +56,5 @@ class User extends Authenticatable
         ];
     }
 }
+
+// Este es el modelo para la gestion del login el cual brinda al controller la informacion a manejar
